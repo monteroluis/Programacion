@@ -13,7 +13,7 @@ import datos.Motocicleta;
  */
 public class Vector {
 
-    private int max = 4; //modificar para ampliar tamaño de vector
+    private int max = 10; //modificar para ampliar tamaño de vector
     private int index = -1;
     private Motocicleta vector[] = new Motocicleta[max];
 
@@ -55,7 +55,6 @@ public class Vector {
 //eliminacion de elementos
     public int remove(String placa) {
         int pos = search(placa);
-        System.out.println("posicion"+pos);
         if (pos != -1) {
             for (int i = pos; i < index; i++) {
                 vector[i] = vector[i+1];
@@ -70,5 +69,7 @@ public class Vector {
     public Motocicleta get(int pos) {
         return vector[pos];
     }
+    
+    
 
 }
