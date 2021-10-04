@@ -42,7 +42,7 @@ public class Vector {
         if (!vacio()) {
 
             for (int i = 0; i <= index; i++) {
-                if(vector[i].getPlaca().equals(placa)){
+                if(vector[i].getPlaca().equalsIgnoreCase(placa)){
                     return i;
                 }
             }
