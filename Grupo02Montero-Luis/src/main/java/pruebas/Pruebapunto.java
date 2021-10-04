@@ -13,12 +13,13 @@ import geometria.Punto;
  */
 public class Pruebapunto {
     
+     
     public static void main(String[] args) {
        
-
+        
       //declaracion e instanciación por constructor por parámetros        
         Punto punto1=new Punto(1,5);
-       
+
         
         // Mostrando propiedades del punto1
         System.out.println("Punto 1");
@@ -53,7 +54,7 @@ public class Pruebapunto {
         System.out.println("X:"+punto4.getCoordX());
         System.out.println("Y:"+punto4.getCoordy());
         
-    }
+}
        
 }
 
