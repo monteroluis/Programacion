@@ -15,14 +15,14 @@ public class Motocicleta {
     private String color;
     private String nombremodelo;
     private int cilindraje;
-    private String  tipo;
+    private String tipo;
     private String transmision;
 
     //constructor por placa
     public Motocicleta(String placa) {
         this.placa = placa;
     }
-    
+
 // constructor por parámetros
     public Motocicleta(String placa, String color, String nombremodelo, int cilindraje, String transmision, String tipo) {
         this.placa = placa;
@@ -33,7 +33,6 @@ public class Motocicleta {
         this.tipo = tipo;
     }
 
-    
     //constructor copia
     public Motocicleta(Motocicleta nueva) {
         this.placa = nueva.placa;
@@ -96,7 +95,5 @@ public class Motocicleta {
     public String toString() {
         return "Motocicleta " + "placa:" + placa + ", color:" + color + ", nombre del modelo:" + nombremodelo + ", cilindraje:" + cilindraje + ", transmision:" + transmision + ", tipo:" + tipo;
     }
-    
-    
 
 }

@@ -20,7 +20,7 @@ public class Vector {
     //añadir elementos al vector
     public void add(Motocicleta nueva) {
         vector[++index] = nueva;
-        
+
     }
 
     public int tamanio() {
@@ -30,19 +30,18 @@ public class Vector {
     public boolean vacio() {
         return index == -1;
     }
-    
-    public boolean lleno(){
-        return index==max;
+
+    public boolean lleno() {
+        return index == max;
     }
-    
-    
+
 // busqueda secuencial en vector
     public int search(String placa) {
 
         if (!vacio()) {
 
             for (int i = 0; i <= index; i++) {
-                if(vector[i].getPlaca().equalsIgnoreCase(placa)){
+                if (vector[i].getPlaca().equalsIgnoreCase(placa)) {
                     return i;
                 }
             }
@@ -51,25 +50,23 @@ public class Vector {
         return -1;
 
     }
-    
+
 //eliminacion de elementos
     public int remove(String placa) {
         int pos = search(placa);
         if (pos != -1) {
             for (int i = pos; i < index; i++) {
-                vector[i] = vector[i+1];
+                vector[i] = vector[i + 1];
             }
             index--;
             return 0;
         }
         return -1;
     }
-    
+
 //obtener un elelemto del vector
     public Motocicleta get(int pos) {
         return vector[pos];
     }
-    
-    
 
 }
